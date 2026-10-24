@@ -1,420 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CarHut</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CarHut</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Hero -->
-  <header class="hero">
-    <nav id="nav">
-      <div class="nav-left">
-        <a href="#" class="logo"><i class="fa-solid fa-car-side"></i> CarHut</a>
-        <a href="tel:+99971123788" class="phone-no"><i class="fa-solid fa-phone"></i> +99 971 123 788</a>
-      </div>
-      <ul class="menu">
-        <li>Home <i class="fa-solid fa-angle-down"></i></li>
-        <li>Listings <i class="fa-solid fa-angle-down"></i></li>
-        <li>Blog <i class="fa-solid fa-angle-down"></i></li>
-        <li>Pages <i class="fa-solid fa-angle-down"></i></li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-      <div class="nav-right">
-        <a href="#" class="signin"><i class="fa-regular fa-user"></i> Sign In</a>
-        <a href="#" class="btn-outline">Submit Listing</a>
-      </div>
-      <button class="burger" id="burger" type="button" aria-label="Menyuni ochish" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-    <div class="hero-txt">
-      <p>$165,000</p>
-      <h1>Ranger Black – 2021</h1>
+<header>
+  <div class="wrap"><nav>
+    <div class="logo"><span class="logo-badge"><i class="fa-solid fa-car"></i></span> CarHut</div>
+    <div class="nav-links">
+      <span>Home <i class="fa-solid fa-chevron-down"></i></span><span>Listings <i class="fa-solid fa-chevron-down"></i></span><span>Blog <i class="fa-solid fa-chevron-down"></i></span><span>Pages <i class="fa-solid fa-chevron-down"></i></span><span>About</span><span>Contact</span>
     </div>
-    <div class="hero-dots"><span class="active"></span><span></span><span></span><span></span></div>
-    <div class="hero-specs">
-      <div><i class="fa-solid fa-gas-pump"></i>Fuel Type<br><b>Petrol</b></div>
-      <div><i class="fa-solid fa-gauge-high"></i><b>250 Miles</b><br>Mileage</div>
-      <div><i class="fa-solid fa-gears"></i>Transmission<br><b>Manual</b></div>
-      <div><i class="fa-regular fa-calendar"></i>Year<br><b>2021</b></div>
-      <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <div class="nav-right">
+      <span>Sign In</span>
+      <a class="btn btn-dark" href="#">Submit Listing</a>
     </div>
-  </header>
+  </nav></div>
+</header>
 
-  <!-- Explore all vehicles -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Explore All Vehicles</h2><a href="#">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      </div>
-      <div class="tabs"><span class="active">In Stock</span><span>New Cars</span><span>Used Cars</span></div>
-      <div class="slider-row">
-        <div class="car-card">
-          <div class="car-img"><img src="2.jpg" alt=""><span class="bookmark"><i
-                class="fa-regular fa-bookmark"></i></span></div>
-          <div class="car-info">
-            <h4>T-Cross – 2023</h4><small>4.0 D5 PowerPulse Momentum 5dr AWD</small>
-            <span><i class="fa-solid fa-gauge-high"></i> 18 Miles</span><span><i class="fa-solid fa-gas-pump"></i>
-              Hybrid</span><span><i class="fa-solid fa-table-cells-large"></i> CVT</span>
-            <div class="car-price">$15,000 <a href="#">View Details <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="car-card">
-          <div class="car-img"><img src="3.jpg" alt=""><span class="bookmark"><i
-                class="fa-regular fa-bookmark"></i></span></div>
-          <div class="car-info">
-            <h4>C-Class – 2023</h4><small>4.0 D5 PowerPulse Momentum 5dr AWD</small>
-            <span><i class="fa-solid fa-gauge-high"></i> 50 Miles</span><span><i class="fa-solid fa-gas-pump"></i>
-              Petrol</span><span><i class="fa-solid fa-table-cells-large"></i> Automatic</span>
-            <div class="car-price">$150,000 <a href="#">View Details <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="car-card">
-          <div class="car-img"><img src="4.jpg" alt=""><span class="badge">Great Price</span></div>
-          <div class="car-info">
-            <h4>X5 – 2022</h4><small>4.0 D5 PowerPulse Momentum 5dr AWD</small>
-            <span><i class="fa-solid fa-gauge-high"></i> 30 Miles</span><span><i class="fa-solid fa-gas-pump"></i>
-              Diesel</span><span><i class="fa-solid fa-table-cells-large"></i> Automatic</span>
-            <div class="car-price">$85,000 <a href="#">View Details <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="arrows"><span><i class="fa-solid fa-chevron-left"></i></span><span><i
-            class="fa-solid fa-chevron-right"></i></span></div>
+<section class="hero">
+  <img class="hero-bg" src="1.jpg" alt="Mercedes-Benz C Class">
+  <div class="wrap hero-content">
+    <div class="price-tag">$35,000</div>
+    <h1>Mercedes‑Benz, C Class</h1>
+    <div class="hero-meta">
+      <span><i class="fa-solid fa-gas-pump"></i> Petrol</span><span><i class="fa-solid fa-road"></i> 100 Miles</span><span><i class="fa-solid fa-gear"></i> Automatic</span>
     </div>
-  </section>
+    <a class="hero-cta" href="#">Learn More <i class="fa-solid fa-arrow-up-right"></i></a>
+  </div>
+  <div class="hero-arrow left"><i class="fa-solid fa-chevron-left"></i></div>
+  <div class="hero-arrow right"><i class="fa-solid fa-chevron-right"></i></div>
+  <div class="wheel-badge"><i class="fa-solid fa-gear"></i></div>
+</section>
 
-  <section>
-    <div class="container">
-      <div class="why-us">
-        <h2>Why Choose Us?</h2>
-        <div class="why-grid">
-          <div><i class="fa-solid fa-percent"></i>
-            <h5>Special Financing Offers</h5>
-            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
-          </div>
-          <div><i class="fa-solid fa-shield-halved"></i>
-            <h5>Trusted Car Dealership</h5>
-            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
-          </div>
-          <div><i class="fa-solid fa-tags"></i>
-            <h5>Transparent Pricing</h5>
-            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
-          </div>
-          <div><i class="fa-solid fa-screwdriver-wrench"></i>
-            <h5>Expert Car Service</h5>
-            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
-          </div>
-        </div>
-      </div>
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>Browse by Type</h2><span class="view-all">View All <i class="fa-solid fa-arrow-up-right"></i></span></div>
+    <div class="types-grid">
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-truck-pickup"></i></div><div class="label">SUV</div></div>
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Sedan</div></div>
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-car"></i></div><div class="label">Hatchback</div></div>
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-gauge-high"></i></div><div class="label">Coupe</div></div>
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-car-battery"></i></div><div class="label">Hybrid</div></div>
+      <div class="type-card"><div class="type-icon"><i class="fa-solid fa-car-rear"></i></div><div class="label">Convertible</div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Browse by Type</h2><a href="#">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>Explore All Vehicles</h2><span class="view-all">View All <i class="fa-solid fa-arrow-up-right"></i></span></div>
+    <div class="tabs"><span class="active">Recent Cars</span><span>Featured Cars</span><span>Popular Cars</span></div>
+
+    <div class="veh-grid">
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="2.jpg" alt="Toyota Camry New">
+          <span class="veh-tag green">Great Price</span>
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Toyota Camry New</h3>
+          <div class="veh-sub">3.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>20 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$40,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
       </div>
-      <div class="type-grid">
-        <div class="type-card"><img src="5.jpg" alt=""></div>
-        <div class="type-card"><img src="6.jpg" alt=""><span><i class="fa-solid fa-car"></i> Sedan</span></div>
-        <div class="type-card"><img src="7.jpg" alt=""><span><i class="fa-solid fa-car-rear"></i> Hatchback</span></div>
-        <div class="type-card"><img src="8.jpg" alt=""><span><i class="fa-solid fa-bolt"></i> Hybrid</span></div>
-        <div class="type-card"><img src="9.jpg" alt=""><span><i class="fa-solid fa-car-side"></i> Coupe</span></div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="3.jpg" alt="T-Cross 2023">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>T‑Cross – 2023</h3>
+          <div class="veh-sub">2.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>35 Miles</span><span>Petrol</span><span>CVT</span></div>
+          <div class="veh-foot"><span class="veh-price">$15,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
       </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="4.jpg" alt="C-Class 2023">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>C‑Class – 2023</h3>
+          <div class="veh-sub">4.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>30 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$150,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="5.jpg" alt="Ford Transit 2021">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Ford Transit – 2021</h3>
+          <div class="veh-sub">2.5 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>2500 Miles</span><span>Diesel</span><span>Manual</span></div>
+          <div class="veh-foot"><span class="veh-price">$22,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="6.jpg" alt="New GLC 2023">
+          <span class="veh-tag">Low Mileage</span>
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>New GLC – 2023</h3>
+          <div class="veh-sub">4.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>62 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$95,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="7.jpg" alt="Audi A6 3.0 New">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Audi A6 3.0 – New</h3>
+          <div class="veh-sub">3.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>100 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$58,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="8.jpg" alt="Corolla Altis 2023">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Corolla Altis – 2023</h3>
+          <div class="veh-sub">1.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>10000 Miles</span><span>Petrol</span><span>CVT</span></div>
+          <div class="veh-foot"><span class="veh-price">$45,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="9.jpg" alt="Ford Explorer 2023">
+          <span class="veh-tag green">Great Price</span>
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Ford Explorer 2023</h3>
+          <div class="veh-sub">3.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>10 Miles</span><span>Diesel</span><span>CVT</span></div>
+          <div class="veh-foot"><span class="veh-price">$35,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-
-  <section>
-    <div class="container">
-      <div class="section-head" style="margin-bottom:6px">
-        <h2>Shop BoxCar Your Way</h2><a href="#">View More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2>Online, in‑person, everywhere</h2>
+        <p>Choose from thousands of vehicles from multiple brands and buy online with Click & Drive, or visit us at one of our dealerships today.</p>
+        <a class="hero-cta" style="background:var(--dark);color:#fff" href="#">Get Started <i class="fa-solid fa-arrow-up-right"></i></a>
       </div>
-      <div class="tabs"><span class="active">New Cars For Sale</span><span>Used Cars For Sale</span><span>Browse By
-          Type</span><span>Browse By Brand</span></div>
-      <ul class="shop-links">
-        <li>Ford Cars</li>
-        <li>Chrysler Cars</li>
-        <li>Land Rover Cars</li>
-        <li>Abarth Cars</li>
-        <li>Fiat Cars</li>
-        <li>Honda Cars</li>
-        <li>Citroen Cars</li>
-        <li>Lexus Cars</li>
-        <li>Alfa Romeo Cars</li>
-        <li>Mitsubishi Cars</li>
-        <li>Hyundai Cars</li>
-        <li>Cupra Cars</li>
-        <li>Mercedes-Benz Cars</li>
-        <li>Audi Cars</li>
-        <li>Nissan Cars</li>
-        <li>Infiniti Cars</li>
-        <li>Dacia Cars</li>
-        <li>Mazda Cars</li>
-        <li>Bentley Cars</li>
-        <li>Peugeot Cars</li>
-        <li>Jaguar Cars</li>
-        <li>DS Cars</li>
-        <li>MG Cars</li>
-        <li>BMW Cars</li>
-        <li>Porsche Cars</li>
-        <li>Jeep Cars</li>
-        <li>Fiat Cars</li>
-        <li>Kia Cars</li>
-        <li>Chevrolet Cars</li>
-        <li>Renault Cars</li>
-      </ul>
+      <img class="split-photo" src="10.jpg" alt="Car on bridge">
     </div>
-  </section>
 
-  <section style="padding-top:10px">
-    <div class="container">
-      <div class="section-head">
-        <h2>Explore Our Premium Brands</h2><a href="#">Show All Brands <i
-            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      </div>
-      <div class="brands">
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>Audi</div>
-        </div>
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>BMW</div>
-        </div>
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>Ford</div>
-        </div>
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>Mercedes Benz</div>
-        </div>
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>Peugeot</div>
-        </div>
-        <div class="brand">
-          <div><i class="fa-solid fa-car-side"></i>Volkswagen</div>
-        </div>
-      </div>
+    <div class="sec-head"><h2>Why Choose Us?</h2></div>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-credit-card"></i></div><h4>Special Financing Offers</h4><p>Our stress-free finance department that can find financial solutions to save you money.</p></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div><h4>Trusted Car Dealership</h4><p>Our stress-free finance department that can find financial solutions to save you money.</p></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-tag"></i></div><h4>Transparent Pricing</h4><p>Our stress-free finance department that can find financial solutions to save you money.</p></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-wrench"></i></div><h4>Expert Car Service</h4><p>Our stress-free finance department that can find financial solutions to save you money.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section style="padding-top:20px">
-    <div class="container">
-      <div class="loan">
-        <div class="loan-text">
-          <h3>Auto Loan Calculator</h3>
-          <p>Use this car payment calculator to estimate monthly payments on your next new or used auto loan.</p>
-          <div class="loan-fields">
-            <label class="field"><span>Price ($)</span><input value="60000"></label>
-            <label class="field"><span>Interest Rate</span><input value="10"></label>
-            <label class="field"><span>Loan Term (year)</span><input value="5"></label>
-            <label class="field"><span>Down Payment</span><input value="5000"></label>
-          </div>
-          <button class="btn-primary">Calculate <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Specials</h2><span class="view-all">View All <i class="fa-solid fa-arrow-up-right"></i></span></div>
+
+    <div class="specials-grid">
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="11.jpg" alt="C-Class 2023">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
         </div>
-        <div class="loan-img"><img src="10.jpg" alt=""></div>
+        <div class="veh-body">
+          <h3>C‑Class – 2023</h3>
+          <div class="veh-sub">4.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>50 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$150,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
       </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="12.jpg" alt="Ford Transit 2021">
+          <span class="veh-tag green">Great Price</span>
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Ford Transit – 2021</h3>
+          <div class="veh-sub">2.5 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>2500 Miles</span><span>Diesel</span><span>Manual</span></div>
+          <div class="veh-foot"><span class="veh-price">$22,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="13.jpg" alt="New GLC 2023">
+          <span class="veh-tag">Low Mileage</span>
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>New GLC – 2023</h3>
+          <div class="veh-sub">4.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>95 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$95,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="veh-card">
+        <div class="veh-photo">
+          <img src="14.jpg" alt="Audi A6 3.5 New">
+          <span class="veh-fav"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="veh-body">
+          <h3>Audi A6 3.5 – New</h3>
+          <div class="veh-sub">3.0 05 PowerPulse Momentum 5dr AW…</div>
+          <div class="veh-specs"><span>100 Miles</span><span>Petrol</span><span>Automatic</span></div>
+          <div class="veh-foot"><span class="veh-price">$58,000</span><span class="veh-link">View Details <i class="fa-solid fa-arrow-up-right"></i></span></div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <section style="padding-top:20px">
-    <div class="container">
-      <div class="section-head">
-        <h2>What our customers say</h2>
-      </div>
-      <div class="slider-row">
-        <div class="review">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i
-              class="fa-solid fa-circle-check" style="color:#999"></i> Verified</div><b>Sales process was simple and
-            easy</b>Sales process was friendly and I didn't feel pressured at all.<em>Ali Tufan</em>
-        </div>
-        <div class="review">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i
-              class="fa-solid fa-circle-check" style="color:#999"></i> Verified</div><b>Good job for
-            project</b>Maximillion was friendly and I didn't feel pressured at all.<em>John Doe</em>
-        </div>
-        <div class="review">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <i
-              class="fa-solid fa-circle-check" style="color:#999"></i> Verified</div><b>Sales process was simple and
-            easy</b>At first you value your money, so you can search and buy long.<em>Shaddryn Simmons</em>
-        </div>
-        <div class="review">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i
-              class="fa-solid fa-circle-check" style="color:#999"></i> Verified</div><b>Good job for
-            project</b>Maximillion was friendly and I didn't feel pressured at all.<em>Augusta Silva</em>
-        </div>
-      </div>
-      <div class="arrows"><span><i class="fa-solid fa-chevron-left"></i></span><span><i
-            class="fa-solid fa-chevron-right"></i></span></div>
-    </div>
-  </section>
+<section class="section testi-band">
+  <div class="wrap">
+    <div class="sec-head"><h2>What our customers say</h2><span class="view-all" style="text-align:right">Rated 4.7/5 based on 28,570 reviews</span></div>
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Team</h2><a href="#">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-top"><span class="stars"><i class="fa-solid fa-star"></i> 4.5</span><span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        <p>Sales process was simple and easy. I had them do what I want them to...</p>
+        <div class="testi-name">Ali Tufan</div>
       </div>
-      <div class="team">
-        <div>
-          <div class="team-photo"><img src="11.jpg" alt=""></div>
-          <h5>Courtney Henry</h5><small>Development Manager</small>
-        </div>
-        <div>
-          <div class="team-photo"><img src="12.jpg" alt=""></div>
-          <h5>Jerome Bell</h5><small>Software Tester</small>
-        </div>
-        <div>
-          <div class="team-photo"><img src="13.jpg" alt=""></div>
-          <h5>Arlene McCoy</h5><small>Software Developer</small>
-        </div>
-        <div>
-          <div class="team-photo"><img src="14.jpg" alt=""></div>
-          <h5>Jenny Wilson</h5><small>UI/UX Designer</small>
-        </div>
+      <div class="testi-card">
+        <div class="testi-top"><span class="stars"><i class="fa-solid fa-star"></i> 4.5</span><span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        <p>Good job for project. Sales process was simple and easy. Have them do...</p>
+        <div class="testi-name">John Doe</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-top"><span class="stars"><i class="fa-solid fa-star"></i> 4.5</span><span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        <p>Sales process was simple and easy. A lot of what matters to us is making...</p>
+        <div class="testi-name">Brooklyn Simmons</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-top"><span class="stars"><i class="fa-solid fa-star"></i> 4.5</span><span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+        <p>Good job for project. Sales process was simple and easy. Have them do...</p>
+        <div class="testi-name">Augusta Ilita</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section style="padding-bottom:20px">
-    <div class="container">
-      <div class="app-promo">
-        <div>
-          <h3>Shop Used Cars, Whether You're<br>On The Lot Or On The Go</h3>
-          <p>Download our app to save cars and create alerts, scan window stickers on our lot for more details, and even
-            call dibs on a car by holding it for up to 1 days.</p>
-          <a href="#" class="store-btn"><i class="fa-brands fa-apple"></i> Download on the<br><b>Apple Store</b></a>
-          <a href="#" class="store-btn"><i class="fa-brands fa-google-play"></i> Get it on<br><b>Google Play</b></a>
-        </div>
-        <div class="app-phone"><img src="15.jpg" alt=""></div>
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><h2>Our Team</h2><span class="view-all">View All <i class="fa-solid fa-arrow-up-right"></i></span></div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-photo" src="15.jpg" alt="Courtney Henry">
+        <h4>Courtney Henry</h4>
+        <p>Development Manager</p>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="16.jpg" alt="Jerome Bell">
+        <h4>Jerome Bell</h4>
+        <p>Software Tester</p>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="17.jpg" alt="Arlene McCoy">
+        <h4>Arlene McCoy</h4>
+        <p>Software Developer</p>
+      </div>
+      <div class="team-card">
+        <img class="team-photo" src="18.jpg" alt="Jenny Wilson">
+        <h4>Jenny Wilson</h4>
+        <p>UX/UI Designer</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Latest Blog Posts</h2><a href="#">View All <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:16px"><h2>Need Some Inspiration?</h2></div>
+    <div class="chips">
+      <span class="chip">Automatics Cars</span><span class="chip">SUVs</span><span class="chip">Electrics Cars</span>
+      <span class="chip">New In Stock</span><span class="chip">Petrol</span><span class="chip">Diesel</span>
+    </div>
+
+    <div class="app-banner">
+      <div>
+        <h3>Shop Used Cars, Whether You're On The Lot Or On The Go</h3>
+        <p>Download our app to save cars and create alerts, scan window stickers on our lot for more details, and even call dibs on a car by holding it for up to 7 days.</p>
+        <div class="store-btns">
+          <span class="store-btn"><i class="fa-brands fa-apple"></i> Download on the App Store</span>
+          <span class="store-btn"><i class="fa-brands fa-google-play"></i> Get it on Google Play</span>
+        </div>
       </div>
-      <div class="blog">
-        <div>
-          <div class="blog-img"><img src="16.jpg" alt=""><span>Sound</span></div><small><i
-              class="fa-regular fa-user"></i>
-            Admin <i class="fa-regular fa-calendar"></i> November 22, 2023</small>
-          <h5>2024 BMW ALPINA XB7 with exclusive details, extraordinary</h5>
-        </div>
-        <div>
-          <div class="blog-img"><img src="17.jpg" alt=""><span>Accessories</span></div><small><i
-              class="fa-regular fa-user"></i> Admin <i class="fa-regular fa-calendar"></i> November 22,
-            2023</small>
-          <h5>BMW X6 M50i is designed to exceed your sportiest.</h5>
-        </div>
-        <div>
-          <div class="blog-img"><img src="18.jpg" alt=""><span>Exterior</span></div><small><i
-              class="fa-regular fa-user"></i>
-            Admin <i class="fa-regular fa-calendar"></i> November 22, 2023</small>
-          <h5>BMW X5 Gold 2024 Sport Review: Light on Sport</h5>
-        </div>
+      <div class="phone-mock"><img class="phone-screen" src="19.jpg" alt="App screenshot"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Explore Our Premium Brands</h2><span class="view-all">Show All Brands <i class="fa-solid fa-arrow-up-right"></i></span></div>
+    <div class="brand-grid">
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Audi</div></div>
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">BMW</div></div>
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Ford</div></div>
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Mercedes Benz</div></div>
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Peugeot</div></div>
+      <div class="brand-card"><div class="brand-icon"><i class="fa-solid fa-car-side"></i></div><div class="label">Volkswagen</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-strip">
+      <img class="cta-bg" src="20.jpg" alt="Woman with car">
+      <div class="cta-inner">
+        <h3>We Make Finding The Right Car Simple</h3>
+        <a class="cta-btn" href="#">Find Out More <i class="fa-solid fa-arrow-up-right"></i></a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <div><b class="footer-logo"><i class="fa-solid fa-car-side"></i> CarHut</b>
-          <p class="footer-about">Exception and occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est.</p>
-          <div class="footer-contacts"><a href="#"><i class="fa-solid fa-phone"></i> +76 056 030 908</a><a href="#"><i
-                class="fa-regular fa-envelope"></i> sfi@boxcars.com</a></div>
-        </div>
-        <div class="footer-join">
-          <h6>Join CarHut</h6>
-          <p class="footer-note">Receive pricing updates, shopping tips more!</p>
-          <input type="email" placeholder="Your email address"><button class="btn-primary" type="button">Sign
-            Up</button>
-        </div>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo"><span class="logo-badge"><i class="fa-solid fa-car"></i></span> CarHut</div>
+        <p>Receive pricing updates, shopping tips & more!</p>
+        <div class="foot-signup"><input type="email" placeholder="Your email address"><button>Sign Up</button></div>
       </div>
-      <div class="footer-links">
-        <div>
-          <h6>Company</h6>
-          <ul>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Services</li>
-            <li>FAQs</li>
-            <li>Terms</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Quick Links</h6>
-          <ul>
-            <li>Get in Touch</li>
-            <li>Help center</li>
-            <li>Live chat</li>
-            <li>How it works</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Our Brands</h6>
-          <ul>
-            <li>Toyota</li>
-            <li>Porsche</li>
-            <li>Audi</li>
-            <li>BMW</li>
-            <li>Ford</li>
-            <li>Nissan</li>
-            <li>Peugeot</li>
-            <li>Volkswagen</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Vehicles Type</h6>
-          <ul>
-            <li>Sedan</li>
-            <li>Hatchback</li>
-            <li>SUV</li>
-            <li>Hybrid</li>
-            <li>Electric</li>
-            <li>Coupe</li>
-            <li>Truck</li>
-            <li>Convertible</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Our Mobile App</h6>
-          <a href="#" class="store-btn store-dark"><i class="fa-brands fa-apple"></i> Download on the<br><b>Apple
-              Store</b></a>
-          <a href="#" class="store-btn store-dark"><i class="fa-brands fa-google-play"></i> Get it on<br><b>Google
-              Play</b></a>
-          <h6 class="connect-title">Connect With Us</h6>
-          <div class="socials"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i
-              class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i></div>
-        </div>
+      <div class="foot-col"><h5>Quick Links</h5>
+        <a href="#">Get in Touch</a><a href="#">Help center</a><a href="#">Live chat</a><a href="#">How it works</a>
       </div>
-      <div class="footer-copy"><span>© 2024 Boxcar.com. All rights reserved.</span><span>Terms Conditions
-          Privacy Notice</span></div>
+      <div class="foot-col"><h5>Our Brands</h5>
+        <a href="#">Toyota</a><a href="#">Porsche</a><a href="#">Audi</a><a href="#">BMW</a><a href="#">Ford</a><a href="#">Nissan</a><a href="#">Peugeot</a><a href="#">Volkswagen</a>
+      </div>
+      <div class="foot-col"><h5>Vehicles Type</h5>
+        <a href="#">Sedan</a><a href="#">Hatchback</a><a href="#">SUV</a><a href="#">Hybrid</a><a href="#">Electric</a><a href="#">Coupe</a><a href="#">Truck</a><a href="#">Convertible</a>
+      </div>
+      <div class="foot-col"><h5>Sale Hours</h5>
+        <p style="font-size:12.5px;color:var(--muted);margin-bottom:6px">Monday - Friday 09:00AM – 09:00PM</p>
+        <p style="font-size:12.5px;color:var(--muted);margin-bottom:6px">Saturday 09:00AM – 07:00PM</p>
+        <p style="font-size:12.5px;color:var(--muted);margin-bottom:14px">Sunday Closed</p>
+        <h5>Connect With Us</h5>
+        <div class="foot-social"><span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-x-twitter"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-linkedin-in"></i></span></div>
+      </div>
     </div>
-  </footer>
+    <div style="font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px">© 2026 CarHut. All rights reserved.</div>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
