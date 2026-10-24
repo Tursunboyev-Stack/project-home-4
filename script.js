@@ -1,30 +1,29 @@
-document.querySelectorAll('.arrows').forEach(function (arrows) {
-    var row = arrows.previousElementSibling;
-    var buttons = arrows.querySelectorAll('span');
-    if (!row || buttons.length < 2) return;
-
-    buttons[0].addEventListener('click', function () {
-        row.scrollBy({ left: -360, behavior: 'smooth' });
+document.querySelectorAll('.tabs').forEach(tabs => {
+  tabs.querySelectorAll('span').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.querySelectorAll('span').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
     });
-    buttons[1].addEventListener('click', function () {
-        row.scrollBy({ left: 360, behavior: 'smooth' });
-    });
+  });
 });
-
-document.querySelectorAll('.tabs').forEach(function (tabs) {
-    tabs.querySelectorAll('span').forEach(function (tab) {
-        tab.addEventListener('click', function () {
-            tabs.querySelector('.active').classList.remove('active');
-            tab.classList.add('active');
-        });
-    });
+ 
+document.querySelectorAll('.veh-fav').forEach(fav => {
+  fav.addEventListener('click', () => {
+    const icon = fav.querySelector('i');
+    const on = fav.classList.toggle('active');
+    icon.classList.toggle('fa-solid', on);
+    icon.classList.toggle('fa-regular', !on);
+  });
 });
-
-var nav = document.getElementById('nav');
-var burger = document.getElementById('burger');
-
-function setMenu(open) {
-    nav.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-    burger.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+ 
+const signup = document.getElementById('signup');
+if (signup) {
+  signup.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = signup.querySelector('button');
+    btn.textContent = 'Done ✓';
+    signup.reset();
+    setTimeout(() => (btn.textContent = 'Sign Up'), 2000);
+  });
 }
+ 
